@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:ModalTest/JMModalOverlay"
+      name = "JMModalOverlay">
+      <FileRef
+         location = "group:JMModalOverlay.h">
+      </FileRef>
+      <FileRef
+         location = "group:JMModalOverlay.m">
+      </FileRef>
+      <FileRef
+         location = "group:JMModalOverlayView.h">
+      </FileRef>
+      <FileRef
+         location = "group:JMModalOverlayView.m">
+      </FileRef>
+      <FileRef
+         location = "group:JMOverlayView.h">
+      </FileRef>
+      <FileRef
+         location = "group:JMOverlayView.m">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:ModalTest.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:ModalTestTests"
+      name = "ModalTestTests">
+      <Group
+         location = "group:en.lproj"
+         name = "en.lproj">
+         <FileRef
+            location = "group:InfoPlist.strings">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:ModalTestTests-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:ModalTestTests.m">
+      </FileRef>
+   </Group>
+</Workspace>
