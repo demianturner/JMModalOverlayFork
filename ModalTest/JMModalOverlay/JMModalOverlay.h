@@ -94,6 +94,10 @@ typedef enum {
  */
 - (void)close;
 
+/* Make it public to allow overriding
+ */
++ (NSWindow *)modalWindowForFrame:(NSRect)frame;
+
 @end
 
 #pragma mark -
@@ -113,8 +117,7 @@ APPKIT_EXTERN NSString * const JMModalOverlayWillCloseNotification;
 /*  Sent after the modalOverlay has finished animating offscreen.  
  */
 APPKIT_EXTERN NSString * const JMModalOverlayDidCloseNotification;
-
-
+    
 #pragma mark -
 #pragma mark Delegate Methods
 @protocol JMModalOverlayDelegate <NSObject>
