@@ -28,8 +28,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JMModalOverlayView.h"
 
-
-
 #pragma mark -
 #pragma mark Notifications
 /*  Sent before the modalOverlay is shown.
@@ -73,9 +71,6 @@ NSString * const JMModalOverlayDidCloseNotification = @"JMModalOverlayDidCloseNo
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modalOverlayDidShow:) name:JMModalOverlayDidShowNotification object:self];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modalOverlayWillClose:) name:JMModalOverlayWillCloseNotification object:self];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modalOverlayDidClose:) name:JMModalOverlayDidCloseNotification object:self];
-        
-        
-        
     }
     return self;
 }
@@ -127,9 +122,7 @@ NSString * const JMModalOverlayDidCloseNotification = @"JMModalOverlayDidCloseNo
             [_modalWindow.contentView addConstraints:constraints];
             
         }
-        
         _contentViewController = contentViewController;
-        
     }
     
 }
@@ -152,8 +145,6 @@ NSString * const JMModalOverlayDidCloseNotification = @"JMModalOverlayDidCloseNo
     contentView.autoresizingMask = NSViewWidthSizable|NSViewHeightSizable;
     
     [modalWindow setContentView:contentView];
-    
-    
     
     return modalWindow;
 }
@@ -300,9 +291,6 @@ NSString * const JMModalOverlayDidCloseNotification = @"JMModalOverlayDidCloseNo
         self.shown = NO;
 
         [[NSNotificationCenter defaultCenter] postNotificationName:JMModalOverlayDidCloseNotification object:self];
-
-
-    
 }
 
 - (void)performClose:(id)sender{
